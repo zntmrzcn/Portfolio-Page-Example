@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Sayfanın Tanıtımı ve İçeriği -->
+    <meta name="keyword" content="Portfolio,HTML,CSS,DIY">
+    <meta name="description" content="Henry Barthes | Portfolio">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <!-- 
+        Google Fonts Usage
+        font-family: 'Permanent Marker', cursive;
+        font-family: 'Roboto', sans-serif;
+     -->
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+     <!-- CSS Dosyalarının Eklenmesi -->
+     <link rel="stylesheet" href="./css/global.css">
+     <link rel="stylesheet" href="./css/main.css">
+
+     <!-- Mobile ve Tablet CSS Dosyalarının Media Şartı İle Eklenmesi -->
+     <link rel="stylesheet" media="(max-width:768px)" href="./css/tablet.css">
+     <link rel="stylesheet" media="(max-width:500px)" href="./css/mobile.css">
+
+    <style>
+        /* Responsive için tablet ve mobile aralıklarının yetmediğinde  */
+       @media screen and (max-width: 1300px){ 
+            .categories-heading{
+                font-size: 15rem;
+            }
+            #skills{
+                    flex-direction:column;
+                    }
+            #skills .categories-heading{
+                margin-right: 100px;
+            }
+            .skills-container{
+                    margin: 0 auto;
+            }   
+            .wtf{
+                margin-top:350px ;
+            }
+            .wtf2{
+                margin-top:550px;
+            }
+           .avatar{
+                top:300px;
+                width: 500px;
+           }
+        
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- _____Navbar Section -->
+    <header>
+        <nav id="navbar" class="navbar navbar-expand py-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                <ul class="navbar-nav font-roboto nav-text font-weight-7">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ______Main Section -->
+    <section id="main">
+        <img src="./assets/Arrow5.png" alt="" class="position-absolute main-arrow">
+        <div class="main main-header font-roboto">
+            <h1 class="main-heading font-weight-3">Hello.</h1> 
+            <div class="typing-wrapper">
+                <div class="main-heading font-weight-3 typed-out">I am <span class="main-heading--highlight font-weight-4"> Henry Barthes. </span></div>
+                <div class="cursor"></div>
+            </div>
+            <h2 class="main-paragraph font-roboto font-weight-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit odit fugiat vitae atque suscipit, aut odio a nisi non.</h2>
+        </div>
+    </section>
+
+    <!-- ______Socials Section -->
+    <section id="socials " class="d-flex justify-content-end">
+        <div class="socials-line d-flex justify-content-end">
+                <a href="#">
+                    <img src="./assets/black-instagram.svg" class="icon mx-2">
+                </a>
+                <a href="#">
+                    <img src="./assets/twitter.svg" class="icon mx-2">
+                </a>
+                <a href="#">
+                    <img src="./assets/github.svg" class="icon mx-2">
+                </a>
+                <a href="#">
+                    <img src="./assets/linkedin-square.svg" class="icon mx-2">
+                </a>
+        </div>
+    </section>
+
+    <!-- _____Skills Section -->
+    <section id="skills" >
+            <h2 class="categories-heading">Skills</h2>
+            <div class="skills-container d-flex">
+                <ul class="skills-group-random font-roboto font-weight-3">
+                    <img src="./assets/man-working.svg" alt="" class="icon">
+                    <li>Writing</li>
+                    <li>Illustration</li>
+                    <li>Social Media</li>
+                    <li>Communication</li>
+                    <li>Content Creation</li>
+                    <li>Team Management</li>
+                </ul>
+                <ul class="skills-group-dev font-roboto font-weight-3">
+                    <img src="./assets/dev.svg" alt="" class="icon">
+                    <li>Git</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>Postgresql</li>
+                    <li>Ruby on Rails</li>
+                </ul>
+            </div>
+
+    </section>
+
+    <!-- _____Works Section -->
+    <section id="work">
+        <div class="work-container">
+            <div class="wtf">
+                <div class="position-relative work-child">
+                    <img src="./assets/Arrow1.png" class="position-absolute btn1-arrow">
+                    <div class="position-absolute btn font-roboto font-weight-3 btn1">Work Btn 1</div>
+                    <span class="position-absolute font-permanent btn1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex vel ut obcaecati dolor debitis!</span>
+                    <img src="./assets/Arrow2.png" class="position-absolute btn2-arrow">
+                    <div class="position-absolute btn font-roboto font-weight-3 btn2">Work Btn 2</div>
+                    <span class="position-absolute font-permanent btn2-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt qui saepe excepturi quia sed placeat.</span>
+                </div>
+            </div>
+            <div class= "work-child">
+                <h2 class="categories-heading">Work</h2>
+            </div>
+        </div>
+        <div class="wtf2">
+            <div class="d-flex justify-content-end">
+                <div class="position-relative">
+                    <img src="./assets/Arrow3.png" class="position-absolute tutorial-arrow">
+                    <span class="position-absolute tutorial-text font-permanent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, ipsam!</span>
+                    <img src="./assets/Arrow5.png" class="position-absolute tutorial-btn-arrow">
+                    <div class="position-absolute tutorial-btn btn text-nowrap">Work Btn 3</div>
+                </div>
+                <div class="iframe-cont">
+                    <iframe src="./assets/likeMatrix.mp4" class="responsive-iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- _____About Section -->
+    <section id="about" class="about-container">
+        <div class="position-relative">
+            <h2 class="categories-heading">About</h2>
+        <p class="about-text font-roboto font-weight-3">
+            <img src="./assets/Me.png" class="p avatar" > 
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quidem eaque. A, repudiandae deleniti incidunt dolores et unde asperiores praesentium adipisci vel, fuga excepturi illum magnam quisquam facere? Illo, beatae! <br><br>
+            
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident labore cumque nemo vitae sunt optio accusamus nesciunt perferendis debitis temporibus, deleniti aliquid ullam nihil quam. <br> <br>
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi minus consectetur soluta sed velit exercitationem. <br> <br>
+             
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, libero?
+        </p>
+        </div>
+    </section>
+
+
+    <!-- _____Contact Section -->
+    <section id="contact" class="my-5">
+        <div class="d-flex justify-content-end">
+            <h2 class="categories-heading">Contact</h2>
+        </div>
+
+        <div class="d-flex justify-content-between wtf3" >
+                <a href="#" class=" d-flex align-items-center">
+                    <img src="./assets/email.svg" class="logo me-3">
+                    <h3 class="contact-text font-roboto font-weight-3 ">example@gmail.com</h3>
+                </a>
+            <div class="d-flex justify-content-end">
+                <a href="#">
+                    <img src="./assets/black-instagram.svg" alt="instagram" class="logo mx-2">
+                </a>
+                <a href="#">
+                    <img src="./assets/twitter.svg" alt="instagram" class="logo mx-2">
+                </a>
+                <a href="#">
+                    <img src="./assets/github.svg" alt="instagram" class="logo mx-2">
+                </a>
+                <a href="#">
+                    <img src="./assets/linkedin-square.svg" alt="instagram" class="logo mx-2">
+                </a>
+            </div>
+        </div>
+      
+    </section>
+
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

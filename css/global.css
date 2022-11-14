@@ -1,0 +1,44 @@
+/* Text */
+a{
+    text-decoration: none;
+}
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.font-permanent{
+    font-family: 'Permanent Marker', 'cursive';
+}
+.font-weight-3{
+    font-weight: 300;
+}
+.font-weight-4{
+    font-weight: 400;
+}
+.font-weight-7{
+    font-weight: 700;
+}
+.font-weight-9{
+    font-weight: 900;
+}
+.categories-heading{       /*Skills, Work, About, Contact*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18rem;
+    color: #E5E5E5;
+}
+
+/* Buttons */
+.btn{
+    font-size:20px;
+    padding: 16px 24px ;
+    background:#FCA311;
+    color:white;
+    border-radius: 16px;
+}
+
+/* Logo */
+.logo{
+    width: 5vw;
+    max-width: 54px;
+
+}

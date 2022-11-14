@@ -1,0 +1,82 @@
+html{
+    font-size:0.7rem;
+}
+.categories-heading{       /*Skills, Work, About, Contact*/
+    font-size:10rem;
+}
+.main-arrow{
+    opacity: 60%;
+    width: 250px;
+    height: 200px;
+}
+
+/* Skills */
+#skills{
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+/* Work */
+.wtf{
+    margin-top: 140px;
+}
+.btn1-arrow{
+    height: 60px;
+    top: 50px;
+}
+.btn2-arrow{
+    height: 60px;
+    top:190px;
+    left:120px;
+}
+.btn1-text{
+    font-size: 1.3rem;
+    width: 18rem;
+    left: 18rem;
+}
+.btn2-text{
+    font-size :1.3rem;
+    width: 18rem;
+    top: 22rem;
+}
+/* ___________________________________________________________________ */
+.wtf2{
+    margin-top: 400px;
+}
+.tutorial-arrow{
+    height: 65px;
+    right: -20px;
+    bottom: -10px;
+    transform: rotate(-47.58deg);
+}
+.tutorial-text{
+    font-size: 1.3rem;
+    width: 200px;
+    right:-150px;
+    bottom: -130px;
+}
+.iframe-cont{
+    width: 85%;
+    padding-top: 50%;
+}
+.tutorial-btn-arrow{
+    height: 90px;
+    right: -230px;
+    bottom: -130px;
+    transform: matrix(-0.73,-0.80,-0.68,0.73,0,0);
+}
+.tutorial-btn{
+    bottom:-190px;
+    left: 160px;
+}
+
+/* About */
+#about{
+    margin-top: 25rem;
+}
+.avatar{
+    width: 350px;
+    margin-left : 0;
+    margin: 0 auto;
+    float: none;
+}

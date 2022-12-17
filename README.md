@@ -6,4 +6,7 @@ Kullandığım kaynaklar:
 * https://coolors.co
 * https://vectorpaint.yaks.co.nz
 
+Demo link:
+https://basicportfoliopage.netlify.app
+
 >_Web Geliştirme Örnek #2_
